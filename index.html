@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Visual Gallery<span>.</span></h1>
+        <p>Explore beautiful moments captured around the world.</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="architecture">Architecture</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+    </main>
+
+    <!-- Lightbox -->
+    <dialog id="lightbox">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <img id="lightboxImage" src="" alt="Enlarged gallery image">
+        <p id="lightboxCaption"></p>
+    </dialog>
+
+    <footer>
+        <p>Made with HTML, CSS & JavaScript ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
